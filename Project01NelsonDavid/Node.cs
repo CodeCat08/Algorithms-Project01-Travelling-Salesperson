@@ -1,15 +1,14 @@
 ﻿// ------------------------------------------------------------------------------------------------------------------------
 // File name: Node.cs
 // Project name: Project01NelsonDavid
-// Project description: 
+// Project description: This project calculates the fastest roundtrip route between 'N' input coordinates, always starting
+//                      from the origin point (0,0).
 // ------------------------------------------------------------------------------------------------------------------------
 // Creator's name and email: David Nelson (nelsondk@etsu.edu)
 // Course Name: CSCI-3230 Algorithms
 // Course Section: 901
 // Creation Date: 09/13/2020
 // ------------------------------------------------------------------------------------------------------------------------
-
-using System;
 
 namespace Project01NelsonDavid
 {
@@ -44,6 +43,7 @@ namespace Project01NelsonDavid
         /// <summary>
         /// Initializes a new instance of the <see cref="Node"/> class.
         /// </summary>
+        /// <param name="id">The node name.</param>
         /// <param name="x">The x coordinate.</param>
         /// <param name="y">The y coordinate.</param>
         public Node(int id, int x, int y)
