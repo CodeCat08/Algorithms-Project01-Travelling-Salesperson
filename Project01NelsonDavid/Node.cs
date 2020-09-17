@@ -26,21 +26,6 @@ namespace Project01NelsonDavid
     public class Node
     {
         /// <summary>
-        /// The node identifier
-        /// </summary>
-        private int _id;
-
-        /// <summary>
-        /// The node x-coordinate
-        /// </summary>
-        private int _x;
-
-        /// <summary>
-        /// The node y-coordinate
-        /// </summary>
-        private int _y;
-
-        /// <summary>
         /// Initializes a new instance of the <see cref="Node"/> class.
         /// </summary>
         /// <param name="id">The node name.</param>
@@ -48,9 +33,9 @@ namespace Project01NelsonDavid
         /// <param name="y">The y coordinate.</param>
         public Node(int id, int x, int y)
         {
-            Id = id;
-            _x = x;
-            _y = y;
+            this.Id = id;
+            this.X = x;
+            this.Y = y;
         }
 
         /// <summary>
@@ -61,7 +46,7 @@ namespace Project01NelsonDavid
         /// </returns>
         public override string ToString()
         {
-            return $"{_id}";
+            return $"{this.Id}";
         }
 
         /// <summary>
@@ -70,17 +55,7 @@ namespace Project01NelsonDavid
         /// <value>
         /// The x value.
         /// </value>
-        public int X
-        {
-            get
-            {
-                return _x;
-            }
-            set
-            {
-                _x = value;
-            }
-        }
+        public int X { get; }
 
         /// <summary>
         /// Gets or sets the y-coordinate.
@@ -88,17 +63,7 @@ namespace Project01NelsonDavid
         /// <value>
         /// The y value.
         /// </value>
-        public int Y
-        {
-            get
-            {
-                return _y;
-            }
-            set
-            {
-                _y = value;
-            }
-        }
+        public int Y { get; }
 
         /// <summary>
         /// Gets or sets the identifier.
@@ -106,16 +71,6 @@ namespace Project01NelsonDavid
         /// <value>
         /// The identifier.
         /// </value>
-        public int Id
-        {
-            get
-            {
-                return _id;
-            }
-            set
-            {
-                _id = value;
-            }
-        }
+        public int Id { get; }
     }
 }

@@ -224,7 +224,11 @@ namespace Project01NelsonDavid
         ///     or
         ///     No coordinates in input.
         /// </exception>
-        /// <exception c="Exception">Please validate that input value is an integer for number of desired points.</exception>
+        /// <exception c="Exception">
+        ///     Please validate that input value is an integer for number of desired points.
+        ///     or
+        ///     No coordinates in input.
+        /// </exception>
         /// <remarks>
         ///     Date Created: 09/13/2020
         /// </remarks>
@@ -243,7 +247,7 @@ namespace Project01NelsonDavid
             for (var i = 0; i < capacity; i++)
             {
                 //read each point string line by line, validate that it's not null
-                string pointString = Console.ReadLine() ?? throw new ArgumentNullException("No coordinates in input.");
+                string pointString = Console.ReadLine() ?? throw new Exception("No coordinates in input.");
                 string[] values = pointString.Split(' '); //split each line into X and Y components
                 int.TryParse(values[0], out int tempX); //parse the X component as an integer
                 int.TryParse(values[1], out int tempY); //parse the Y component as an integer
