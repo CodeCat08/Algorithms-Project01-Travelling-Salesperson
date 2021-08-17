@@ -4,9 +4,6 @@
 // Project description: This project calculates the fastest roundtrip route between 'N' input coordinates, always starting
 //                      from the origin point (0,0).
 // ------------------------------------------------------------------------------------------------------------------------
-// Creator's name and email: David Nelson (nelsondk@etsu.edu)
-// Course Name: CSCI-3230 Algorithms
-// Course Section: 901
 // Creation Date: 09/13/2020
 // ------------------------------------------------------------------------------------------------------------------------
 
@@ -17,9 +14,6 @@ namespace Project01NelsonDavid
     /// Class Purpose: This class represents a node with X & Y coordinates provided
     /// from an input file.
     /// </summary>
-    /// <author>
-    /// David Nelson
-    /// </author>
     /// <remarks>
     /// Creation Date: 09/13/2020
     /// </remarks>
